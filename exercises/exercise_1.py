@@ -38,6 +38,11 @@ def ladrilhosPorArea(altura, largura, tamanhoLadrilho):
     print('[ladrilhosPorArea] Serão necessários ' + str(res) + ' ladrilhos para cobrir a área proposta')
     nl()
 
+def tamanhoLadoTriangulo(ladoA, ladoB, anguloOposto):
+    ladoC = (ladoA**2 + ladoB**2 - 2*ladoA*ladoB*math.cos(math.radians(anguloOposto)))**0.5
+    print('[tamanhoLadoTriangulo] O tamanho do ladoC do triângulo é: ' + str(ladoC))
+    nl()
+
 perimetro(5)
 caracol(2.1, 5)
 caixasDagua(75, 3160)
@@ -45,3 +50,4 @@ pecasEmCaixas(188, 12)
 distanciaTotal(600, 37.5)
 professoresDeMatematica(25, 26)
 ladrilhosPorArea(400, 550, 15)
+tamanhoLadoTriangulo(10, 16, 60)
